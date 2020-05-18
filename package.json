@@ -1,0 +1,24 @@
+{
+  "name": "evm-chain-monitor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlockadeLabs/evm-chain-monitor.git"
+  },
+  "author": "Blockade Games",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BlockadeLabs/evm-chain-monitor/issues"
+  },
+  "homepage": "https://github.com/BlockadeLabs/evm-chain-monitor#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "loglevel": "^1.6.8",
+    "web3": "^1.2.7"
+  }
+}
