@@ -2,7 +2,7 @@ let log = require('loglevel');
 log.setDefaultLevel('trace');
 
 let config = require('./config.js');
-let EthereumClient = require('../src/Ethereum/EthereumClient.js');
+let EthereumClient = require('../index.js').EthereumClient;
 
 // Create a chain configuration object
 const eth_config = {
