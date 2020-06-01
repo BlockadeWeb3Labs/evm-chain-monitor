@@ -11,7 +11,12 @@ class EthereumClient {
 	}
 
 	connect() {
-		this.web3 = new Web3(this.endpoint);
+		let provider = this.endpoint;
+		if (this.endpoint.indexOf('ws://') !== -1 || this.endpoint.indexOf('wss://') !== -1) {
+			provider = new Web3.providers.WebsocketProvider(this.endpoint);
+		}
+
+		this.web3 = new Web3(provider);
 	}
 
 	getBlock(blockHashOrNumber = "latest", callback = null) {
