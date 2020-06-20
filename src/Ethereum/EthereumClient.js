@@ -19,6 +19,10 @@ class EthereumClient {
 		this.web3 = new Web3(provider);
 	}
 
+	getWeb3() {
+		return this.web3;
+	}
+
 	getBlock(blockHashOrNumber = "latest", callback = null) {
 		return this.web3.eth.getBlock(blockHashOrNumber, true, callback);
 	}
